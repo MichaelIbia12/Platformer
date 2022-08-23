@@ -1,0 +1,132 @@
+body {   
+    transition: all 0.5s;
+    background-image: url("./img/halanna-halila-8lQyd8wEAzI-unsplash.jpg");
+    background-size: 300%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    transition: all 0.5s
+}
+.dimLayer{
+    background-color: #12121281;
+     display: grid;
+    justify-items: center;
+    padding: 20px;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+.modal{
+    background-color: #121212c9;
+    border-radius: 2px;
+    margin: 70px;
+    height: fit-content;
+    top: 0;
+    position: fixed;
+    box-shadow: #000000 1px 1px 50px;
+    width: 700px;
+    animation: modal 3s;
+    color: white;
+    padding: 50px 50px;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+h1{
+    font-family: "Cairo-Regular";
+    margin-top: 70px;
+    font-size: 60px;
+    height: 120px;
+}
+h1>span{
+    font-family: initial;
+    font-size: 70px;
+    color: white;
+}
+span{
+    font-size: 20px;
+    font-family: "Cairo-Regular";
+    color: #ffffffd8;
+}
+span>a{
+    color: #0096FF;
+}
+.input{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    margin-bottom: 30px;
+    margin-top: 90px;
+}
+.row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+}
+input{
+    padding:13px 20px;
+    border-radius: 30px;
+    border: 2px solid white;
+    background-color: transparent;
+    font-family: "Cairo-Regular";
+    color: white;
+    outline: none;
+}
+input:focus{
+    border-radius: 15px;
+    border-bottom: 2px solid white;
+}
+input::placeholder{
+    font-family: "Cairo-Regular";
+    color: #c0c0c0;
+}
+.margin{
+    margin-bottom: 20px;
+}
+button{
+    padding: 10px;
+    border: 2px solid white;
+    background-color: transparent;
+    border-radius: 30px;
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    font-family: "Cairo-Regular";
+
+}
+.acc:hover{
+  background-color: white;
+  color: #121212;
+  font-weight: 900;
+
+}
+.rowFour{
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.rowFour button{
+ font-size: 20px;
+ border: none;
+ width: 45px;
+ border-radius: 0px;
+ height: fit-content;
+}
+.rowFour button::after{
+  content: " ";
+  background-color: #0096FF;
+  width: 0%;
+  display: block;
+  height: 2px;
+  transition: 0.5s all;
+  border-radius: 20px;
+}
+.rowFour button:hover::after{
+  width: 100%;
+}

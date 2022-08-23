@@ -1,0 +1,10 @@
+@keyframes modal {
+    0%{
+      top: 90px;
+      box-shadow: #121212 1px 1px 0px;
+    }
+    100%{
+      top: 0px;
+      box-shadow: #121212 1px 1px 20px;
+    } 
+}
